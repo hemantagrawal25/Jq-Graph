@@ -1,0 +1,49 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) 2014,Hemant Agrawal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Column Graph</title>
+		<meta name="author" content="hemant.agrawal" />
+		<!-- Date: 2014-05-30 -->
+		<link rel="stylesheet" href="css/graph.css" />
+		<script language="javascript" type="text/javascript" src="js/jquery-2.1.1.js"></script>
+		<script language="javascript" type="text/javascript" src="js/jquery.min.js"></script>		
+		<script language="javascript" type="text/javascript" src="js/graph.js"></script><br />		
+		<script type="text/javascript">
+			$( document ).ready(function() {
+				var color = ["#74A82A", "#D55511", "#3565A1", "#A42F11", "#DC6D1C", "#0DA921", "#4C4E47", "#9F705B", "#643EA0", "#F6A615", "#CB1F26", "#B33D5A", "#EEA435", "#F6A615"];
+				var root= {xdata:['Ava','Bailey','PORTER','Aaron','hemant'],ydata:['1569','1052','397','241','130'],url:['#','#','#','#','#'],xlabel:'User',ylabel:'Hits',limit:'5',format:'2',color:color};
+				changeGraph(2,'graph_121',root,'json');				
+			});	
+		</script>
+	</head>
+	<body>		
+		<div id="graph_121" style="height: 400px; display: block; width: 70%;position: relative;"></div>		
+	</body>
+</html>
+

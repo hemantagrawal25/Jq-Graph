@@ -1,0 +1,221 @@
+/**************************************************************************************************************
+The MIT License (MIT)
+
+Copyright (c) 2014,Hemant Agrawal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+**************************************************************************************************************/
+
+.manageGraphXLine {
+	background-color: #CCC;
+	width: 74%;
+	height: 1px;
+	top: 79.5%;
+	left: 20%;
+	position: absolute;
+}
+.managerGraphLabelHorizontal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: maroon;
+	white-space: normal;
+	position: absolute;
+	top: 50%;
+}
+.managerGraphLabelVertical {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: maroon;
+	white-space: normal;
+	position: absolute;
+	left: 50%;
+	bottom: 2%;
+}
+.managerGraphLabelY {
+	color: #313131;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	left: 6%;
+	overflow: hidden;
+	position: absolute;
+	text-align: right;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 13%;
+}
+.managerGraphLabelX {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #313131;
+	position: absolute;
+}
+.manageGraphYLine {
+	background-color: #CCC;
+	width: 1px;
+	height: 75%;
+	bottom: 20%;
+	position: absolute;
+}
+.manageGraphXaxisLine {
+	position: absolute;
+	left: 20%;
+	z-index: 1000;
+	box-shadow: 5px 5px 5px #888888;
+	border-radius:0px 10px 10px 0px;
+	-moz-border-radius:0px 10px 10px 0px;
+	-webkit-border-radius:0px 10px 10px 0px;
+	background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#CCCCCC),color-stop(50%,#EEEEEE), color-stop(50%,#EEEEEE), color-stop(100%,#CCCCCC));	   
+}
+.manageGraphYaxisLine {
+	position: absolute;	
+	bottom: 20.5%;;
+	z-index: 1000;
+	box-shadow: 5px 5px 5px #888888;
+	border-radius:10px 10px 0px 0px;
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+	background: -moz-linear-gradient(left, #CCCCCC 0%, #EEEEEE 50%, #EEEEEE 50%, #CCCCCC 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#CCCCCC),color-stop(50%,#EEEEEE), color-stop(50%,#EEEEEE), color-stop(100%,#CCCCCC));
+}
+
+.managerGraphLabel {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #313131;
+	position: absolute;
+	z-index: 1000;
+}
+.rotate {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+div.Con_table {
+	width: 100%;
+	overflow: hidden;
+}
+table.TableData {
+	width: 100%;
+}
+.table {
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+.tdhead {
+	font-size: 11px;
+	background: none repeat scroll 0 0 #7A8EB6;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: white;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	height: 25px;
+	text-align: center;
+}
+.unsort {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.tdhead_filter {
+	font-size: 11px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: #313131;
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	white-space: nowrap;
+	height: 15px;
+	text-align: center;
+}
+.TableNevi {
+	width: 100%;
+	border-left: 1px solid #E2E2E2;
+	border-right: 1px solid #E2E2E2;
+	background: #F2F2F2;
+	visibility: hidden;
+	position: absolute;
+}
+tbody tr.trdark {
+	background-color: whitesmoke;
+}
+tbody tr.trxdark {
+	background-color: #BDBDB9;
+}
+tbody tr.trlight {
+	background-color: #FFF;
+}
+td.tddata, td.tddatablue {
+	color: #313131;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 12px;
+	overflow: hidden;
+	white-space: nowrap;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	height: 18px;
+}
+td.tddatablue {
+	color: #2388C7;
+}
+.tooltip-soft-blue {
+	position: absolute;
+	opacity: 0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ddeefe),
+		to(#c0e0f1) );
+	background-image: -webkit-linear-gradient(top, #ddeefe, #c0e0f1);
+	background-image: -moz-linear-gradient(top, #ddeefe, #c0e0f1);
+	background-image: -ms-linear-gradient(top, #ddeefe, #c0e0f1);
+	background-image: -o-linear-gradient(top, #ddeefe, #c0e0f1);
+	background-image: linear-gradient(to bottom, #ddeefe, #c0e0f1);
+	color: #3f4b53;
+	font-weight: bold;
+	padding: 5px 20px;
+	border-radius: 20px;
+	border: 1px solid #c0d9e9;
+	margin-top: 10px;
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+.tooltip-soft-blue:after {
+	content: '';
+	border-top: 6px solid #c0e0f1;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	position: absolute;
+	left: 45%;
+	margin-top: 1.6em;
+}
+
+.tooltip-soft-blue:before {
+	content: '';
+	border-top: 6px solid #c0d9e9;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	position: absolute;
+	left: 45%;
+	margin-top: 1.7em;
+}

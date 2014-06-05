@@ -1,0 +1,153 @@
+==Licence 
+
+The MIT License (MIT)
+
+Copyright (c) 2014,Hemant Agrawal
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+=== COMPLETE Licence 
+
+Note= it is alpha release so may be lots of bug and some functionality may be work or not. so please use on your own risk.
+
+	Here three examples with different chart.
+	
+	1) COLUMN GRAPH
+	
+		This examples defines under columngraph.html. In this html, define one div with id =graph_121. When html loaded, there is load javascript which is written under ready function. here call method changeGraph with some parameter. parameter are define below.
+		
+		changeGraph(2,'graph_121',root,'json');
+		
+		->"2" means we want to draw column graph
+		->"graph_121" means we want to draw graph under this div id.
+		->"root" means we want to send data in this root variable
+		->"json" means we say to graph api that root is in josn.
+			here you can send data in xml format also. For that you should send "xml" in last parameter of method.
+			
+		changeGraph(2,'graph_121',root,'xml');	
+		
+		JSON Format
+		
+		var root= {xdata:['Ava','Bailey','PORTER','Aaron','hemant'],ydata:['1569','1052','397','241','130'],url:['#','#','#','#','#'],xlabel:'User',ylabel:'Hits',limit:'5',format:'0',color:color};
+		
+		xdata = json array which data shows on x-axis
+		
+		ydata = json array which data shows on y-axis. it is consider also value for draw graph.
+		
+		url = json array which is use for redirect your request or change page.
+		
+		xlabel = shows value as a label on x-axis
+		
+		ylabel = shows value as a label on y-axis
+		
+		limit = shows total no of record even you data array is 4 but you want to show 5 records on graph. so it is very important.
+		
+		format = this parameter is used for value. if your value is bytes and you want to show proper format. then give format value. (2 = show in bytes,kb,mb,gb,tb) (3=shows percentage) and other show in thousand,lakh etc.
+		
+		color= you can send color json array. you can fill your color on graph line. color array is following.
+		
+		var color = ["#74A82A", "#D55511", "#3565A1", "#A42F11", "#DC6D1C", "#0DA921", "#4C4E47", "#9F705B", "#643EA0", "#F6A615", "#CB1F26", "#B33D5A", "#EEA435", "#F6A615"];
+
+	2) BAR GRAPH
+	
+		This examples defines under bargraph.html. In this html, define one div with id =graph_121. When html loaded, there is load javascript which is written under ready function. here call method changeGraph with some parameter. parameter are define below.
+		
+		changeGraph(1,'graph_121',root,'json');
+		
+		->"1" means we want to draw bar graph
+		->"graph_121" means we want to draw graph under this div id.
+		->"root" means we want to send data in this root variable
+		->"json" means we say to graph api that root is in josn.
+			here you can send data in xml format also. For that you should send "xml" in last parameter of method.
+			
+		changeGraph(2,'graph_121',root,'xml');	
+		
+		JSON Format
+		
+		var root= {xdata:['Ava','Bailey','PORTER','Aaron','hemant'],ydata:['1569','1052','397','241','130'],url:['#','#','#','#','#'],xlabel:'User',ylabel:'Hits',limit:'5',format:'0',color:color};
+		
+		xdata = json array which data shows on x-axis
+		
+		ydata = json array which data shows on y-axis. it is consider also value for draw graph.
+		
+		url = json array which is use for redirect your request or change page.
+		
+		xlabel = shows value as a label on x-axis
+		
+		ylabel = shows value as a label on y-axis
+		
+		limit = shows total no of record even you data array is 4 but you want to show 5 records on graph. so it is very important.
+		
+		format = this parameter is used for value. if your value is bytes and you want to show proper format. then give format value. (2 = show in bytes,kb,mb,gb,tb) (3=shows percentage) and other show in thousand,lakh etc.
+		
+		color= you can send color json array. you can fill your color on graph line. color array is following.
+		
+		var color = ["#74A82A", "#D55511", "#3565A1", "#A42F11", "#DC6D1C", "#0DA921", "#4C4E47", "#9F705B", "#643EA0", "#F6A615", "#CB1F26", "#B33D5A", "#EEA435", "#F6A615"];
+		
+	2) Pie Chart
+	
+		This examples defines under piechart.html. In this html, define one div with id =graph_121. When html loaded, there is load javascript which is written under ready function. here call method changeGraph with some parameter. parameter are define below.
+		
+		changeGraph(3,'graph_121',root,'json');
+		
+		->"1" means we want to draw pie chart
+		->"graph_121" means we want to draw graph under this div id.
+		->"root" means we want to send data in this root variable
+		->"json" means we say to graph api that root is in josn.
+			here you can send data in xml format also. For that you should send "xml" in last parameter of method.
+			
+		changeGraph(3,'graph_121',root,'xml');	
+		
+		JSON Format
+		
+			var root= {xdata:['Ava','Bailey','PORTER','Aaron','hemant'],ydata:['1569','1052','397','241','130'],url:['#','#','#','#','#'],xlabel:'User',ylabel:'Hits',limit:'5',format:'0',color:color};
+			
+			xdata = json array which data defines category.
+			
+			ydata = json array which data defines value to category. slice divided in different category using ydata value. 
+			
+			url = in pie chart it is not use but must be send.
+			
+			xlabel = in pie chart it is not use but must be send.
+			
+			ylabel = in pie chart it is not use but must be send.
+			
+			limit = shows total no of record even you data array is 4 but you want to show 5 records on graph. so it is very important.
+			
+			format = this parameter is used for value. if your value is bytes and you want to show proper format. then give format value. (2 = show in bytes,kb,mb,gb,tb) (3=shows percentage) and other show in thousand,lakh etc.
+			
+			color= you can send color json array. you can fill your color on graph line. color array is following.
+			
+			var color = ["#74A82A", "#D55511", "#3565A1", "#A42F11", "#DC6D1C", "#0DA921", "#4C4E47", "#9F705B", "#643EA0", "#F6A615", "#CB1F26", "#B33D5A", "#EEA435", "#F6A615"];	
+			
+			
+			
+Graph Api
+
+				here graph.js file is available. graph drawing logic inside in this file. you can read and understand this file and change according to your requirement. 
+				
+				in this file, three main method for draw graph.
+				1) pieChart method draw pie chart
+				2) barGraph method draw bar graph
+				3) columnbarGraph method draw column graph.
+				
+				In future, we will add more n more graph.
+				
+Enjoy this api and give me review. 				
